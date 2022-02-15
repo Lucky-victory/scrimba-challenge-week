@@ -5,7 +5,7 @@ export default function App(){
    const cardOptions=[{className:'box',image:'./images/bg1.jpg'},{className:'bottom',image:'./images/bg2.jpg'},
    {className:'left',image:'./images/bg3.jpg'},
    {className:'left',image:'./images/bg4.jpg'}];
-   const [card,setCard]=useState({className:'left',image:'./images/bg4.jpg'});
+   const [card,setCard]=useState({className:'',image:''});
    const [sender,setSender]=useState('');
    const [receiver,setReceiver]=useState('');
    const [greeting,setGreeting]=useState('');

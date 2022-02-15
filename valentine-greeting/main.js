@@ -19,8 +19,8 @@ export default function App(){
    }
    const generateCard=()=>{
      const randomCard=cardOptions[Math.floor(Math.random() * cardOptions.length)];
-     setCard(randomCard);
      if((greeting && sender && receiver) !==''){
+     setCard(randomCard);
         
      setHidden(false);
      }

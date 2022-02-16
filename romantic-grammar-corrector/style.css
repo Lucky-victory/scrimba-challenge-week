@@ -52,6 +52,24 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     border-radius: 5px;
     margin: 1rem auto;
+    
+}
+.paragraph.animate{
+   animation:  animate 3s linear;
+}
+@keyframes animate{
+   0%{
+      transform: scaleX(1.2)
+   }
+   25%{
+      transform: rotateX(-120deg)
+   }
+   75%{
+      transform: rotateY(120deg)
+   }
+   100%{
+      transform: scale(0,0) rotate(0,0) 
+   }
 }
 
 button {
@@ -64,6 +82,8 @@ button {
     background: var(--deep-pink);
     margin: 1rem auto;
     font-size: 1.2rem;
+    text-transform: capitalize;
+    z-index: 2;
 }
 
 button:hover,

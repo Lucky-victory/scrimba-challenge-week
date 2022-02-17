@@ -28,6 +28,7 @@ body {
     background-color: var(--light-pink);
     font-family: 'Karla', sans-serif;
     padding: 1rem;
+    width: 100vw;
 }
 h1{
    text-align: center;

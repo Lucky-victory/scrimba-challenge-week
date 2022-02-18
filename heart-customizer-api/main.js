@@ -6,11 +6,9 @@ import ReactDOM from 'react-dom';
 export default function App(){
 const [heartColor,setHeartColor]=useState('#2B283A');
 const fetchColors= async()=>{
- const response = await fetch('./colors.json');
+ const response = await fetch('https://apis.scrimba.com/hexcolors?count=1');
  const { colors } = await response.json();
- const randomColor = colors[Math.floor(Math.random() * colors.length)];
- console.log(heartColor);
- setHeartColor(randomColor);  
+ setHeartColor(colors[0].value);  
 }
 
 useEffect( ()=>{
